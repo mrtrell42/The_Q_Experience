@@ -1,142 +1,163 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }
 
 :root {
-	--primary-color: #d63031;
-	--secondary-color: #636e72;
-	--font: "Poppins", sans-serif;
+  --primary-color: #d63031;
+  --secondary-color: #636e72;
+  --font: 'Poppins', sans-serif;
 }
 
 .btn {
-	padding: 0.6rem 0.8rem;
-	text-transform: uppercase;
-	font-family: var(--font);
-	background: var(--primary-color);
-	color: white;
-	font-size: 16px;
-	text-decoration: none;
-	outline: none;
-	border: 2px solid var(--primary-color);
-	transition: 0.3s;
-	cursor: pointer;
+  padding: 0.6rem 0.8rem;
+  text-transform: uppercase;
+  font-family: var(--font);
+  background: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
-	background: transparent;
+  background: transparent;
 }
 
 body {
-	background: black;
-	font-family: var(--font);
+  background: black;
+  font-family: var(--font);
 }
 
 nav {
-	position: fixed;
-	height: 60px;
-	width: 100vw;
-	border-top: 0.5rem solid var(--primary-color);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 999999;
+  position: fixed;
+  background-color: black;
+  height: 60px;
+  width: 100vw;
+  border-top: 0.5rem solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999999;
 }
 
 .logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 55px;
-	width: 15%;
-	font-weight: 700;
-	background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 15%;
+  font-weight: 700;
+  background: var(--primary-color);
 }
 
 .logo::before {
-	content: "Q";
-	color: white;
+  content: 'Q';
+  color: white;
 }
 
 .logo::after {
-	content: " Experience";
-	color: black;
+  content: ' Experience';
+  color: black;
 }
 
 ul {
-	display: flex;
-	align-items: center;
-	height: 60px;
+  display: flex;
+  align-items: center;
+  height: 60px;
 }
 
 ul a {
-	text-decoration: none;
-	color: white;
-	margin: 0 2rem;
-	text-transform: uppercase;
-	font-family: var(--font);
-	font-weight: 700;
-	font-size: 16px;
+  text-decoration: none;
+  color: white;
+  margin: 0 2rem;
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 16px;
 }
 
 ul li {
-	list-style: none;
+  list-style: none;
 }
 
 ul a:hover {
-	color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* fix this img position*/
 .banner {
-	background: url(img/img_04.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 90vh;
+  background: url(img/edgar-chaparro-pullup.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.avatar {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-basis: 40%;
+  height: 500px;
+  border-radius: 100%;
+}
+
+.call-to-action {
+  flex-basis: 60%;
+  padding: 5%;
 }
 
 .intro {
-	position: absolute;
-	top: 30%;
-	left: 10%;
-	color: white;
-}
-
-.intro h2,
-p {
-	display: block;
-	width: 60%;
+  position: absolute;
+  background: #ff220c;
+  opacity: 0.8;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  color: white;
+  display: flex;
 }
 
 .intro h2 {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .intro .btn {
-	margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .row {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+	justify-content: space-around;
 }
 
 .card {
-	width: 33.3%;
-	height: 250px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+  width: 30%;
+	margin: 2rem 0;
+  height: 250px;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+	border-radius: .5rem;
 }
 
 .card h2 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
